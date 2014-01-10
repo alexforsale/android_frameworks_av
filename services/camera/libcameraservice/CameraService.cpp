@@ -898,8 +898,8 @@ void CameraService::loadSound() {
     int disableSound = atoi(value);
 
     if(!disableSound) {
-        mSoundPlayer[SOUND_SHUTTER] = newMediaPlayer("/system/media/audio/ui/camera_click.ogg");
-        mSoundPlayer[SOUND_RECORDING] = newMediaPlayer("/system/media/audio/ui/VideoRecord.ogg");
+      mSoundPlayer[SOUND_SHUTTER] = NULL;
+      mSoundPlayer[SOUND_RECORDING] = NULL;
     }
     else {
         mSoundPlayer[SOUND_SHUTTER] = NULL;
